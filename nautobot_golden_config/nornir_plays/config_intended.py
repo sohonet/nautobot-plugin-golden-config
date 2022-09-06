@@ -33,6 +33,7 @@ LOGGER = logging.getLogger(__name__)
 
 jinja_settings = Jinja2.get_default()
 jinja_env = jinja_settings.env
+jinja_env.add_extension('jinja2.ext.do')
 
 
 def run_template(  # pylint: disable=too-many-arguments
